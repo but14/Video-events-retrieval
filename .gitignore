@@ -1,0 +1,11 @@
+# Ignore video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Ignore numpy files
+*.npy
+
+# Ignore specific folders
+data/soccernet/
