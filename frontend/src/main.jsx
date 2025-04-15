@@ -50,7 +50,7 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+  
     <RouterProvider router={router} />
-  </BrowserRouter>
+  
 );
