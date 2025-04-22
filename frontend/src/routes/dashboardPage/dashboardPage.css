@@ -4,6 +4,41 @@
   flex-direction: column;
   align-items: center;
 
+  .youtubeFormContainer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+
+  .youtubeFormContainer.show {
+    max-height: 100px; /* Đặt chiều cao tối đa khi hiển thị */
+  }
+
+  .youtubeForm {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .youtubeForm input {
+    flex: 1;
+    padding: 8px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+  }
+
+  .youtubeForm button {
+    padding: 8px 16px;
+    background-color: #217bfe;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
   .content {
     display: flex;
     justify-content: space-between;
@@ -36,6 +71,30 @@
     height: 300px; /* Chiều cao cố định */
     margin-left: 10px; /* Khoảng cách giữa VIDEO và TEXT */
     border-radius: 10px;
+  }
+
+  .btnSum {
+    display: flex; /* Sử dụng flexbox để căn chỉnh nội dung */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    padding: 15px 25px;
+    background-color: #217bfe;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 120px;
+    gap: 2px; /* Khoảng cách giữa text và hình ảnh */
+
+    &:hover {
+      background-color: white;
+      color: #217bfe;
+    }
+  }
+
+  .btnSum img {
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
   }
 
   .uploadBtn {
